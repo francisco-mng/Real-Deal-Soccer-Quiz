@@ -1,0 +1,19 @@
+MCQ#Holds the record for the overall highest number of penalties scored in history:#Cristiano Ronaldo#Lionel Messi#Diego Maradona#Cristiano Ronaldo
+TF#Mohamed Salah holds the all-time goal-scoring record in a single English Premier League Season:#False
+MCQ#Competed in all FIFA World Cup editions since the introduction of the concept:#Brazil#Germany#Netherlands#Brazil
+TF#Kylian Mbappe, bought by PSG from Monaco in 2017, holds the record for the world's most expensive Football Player:#False
+MCQ#Goalkeeper with the highest number of clean sheets in his competitive Football career:#Manuel Neuer#Gianluigi Buffon#Pepe Reina#Gianluigi Buffon
+TF#George Best, former New Zealand International, is the most capped men's International Footballer in History:#False
+MCQ#Holds the all-time record for the highest number of dismissals, past and present, in Football history (red-cards):#Cyril Rool#Sergio Ramos#Gerardo Berdoya#Gerardo Berdoya
+TF#Altogether, Lionel Messi and Cristiano Ronaldo hold a staggering total of 13 FIFA Ballon'd'Ors:#True
+MCQ#Obtained the highest number of yellow cards, past and present, in Football history#Sergio Ramos#Pepe#Joao Palhinha#Marcelo#Sergio Ramos
+TF#The 2006 World Cup QF match between Portugal vs Netherland, notorious for being the Battle of Nuremburg, saw the most yellow cards and dismissals in a single World Cup match#True
+MCQ#Highest number of goals scored by a Defender, past and present, in Football history#Virgil Van Djik#Ronald Koeman#Roberto Carlos#Ronald Koeman
+TF#Ghana is the only African country to have reached a World Cup Quarterfinal#False
+MCQ#Highest number of goals scored by a Goalkeeper, past and present, in Football history#Rogerio Ceni#Jose Luis Chilavert#Jorge Campos#Rogerio Ceni
+TF#Brazil, has the most World Cup quarterfinal entries throughout Football#True
+MCQ#Highest number of goals scored by a Midfielder, past and present, in Football history#Teofilo Cubillas#Zico#Michel Platini#Zico
+TF#Argentina, current World Champions have more World Cup semi-final appearances than any country in Football history#False
+MCQ#Most assists from a Footballer, past and present, in Football history#Pele#Lionel Messi#Ferenc Puskas#Ferenc Puskas
+TF#France, who were runners-up in the previous World Cup, lost more World Cup final matches than any other country in Football history#False
+MCQ#Creator of the Tiki-Taka ball passing technique as club Manager in Barcelona:#Harry Redknap#Pep Guardiola#Johann Cryuff#Johann Cryuff

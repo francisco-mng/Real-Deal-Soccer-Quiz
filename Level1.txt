@@ -1,0 +1,27 @@
+TF#VAR reviews decisions for corner-kicks to be awarded#False
+MCQ#The hosts for the 2024 UEFA EUROS#Germany#Poland#Italy#Germany
+TF#Italy, are currently the reigning, defending European Champions#True
+MCQ#Beaten France To Win Their First European Championship in the 2016 UEFA Euros#Portugal#England#Belgium#Portugal
+TF#Israel will be featured at the 2024 UEFA EUROS despite their recent, brutal attacks on Gaza#True
+TF#24 countries will be competing, but only 8 will qualify to the next round#False
+MCQ#The country with the highest number of appearances in the UEFA EUROS showpiece is#France#Germany#Netherlands#Germany
+MCQ#The most recent country to qualify for the UEFA Euros 2024#Kazakstan#Georgia#Liechtenstein#Georgia
+TF#Germany are the highest ranked European Country in the most recent FIFA rankings#False
+MCQ#The most capped player in the UEFA EUROS showpiece is...#Cristiano Ronaldo#Kylian Mbappe#Franz Bekenbauer#Cristiano Ronaldo
+TF#Third place/ Fourth place playoffs are not available in this European Championship#True
+MCQ#The favourites to win this year's UEFA EUROS, is#Spain#England#Germany#England
+TF#UEFA, the Football Governing Body in Europe, stands for Union of European Football Associations#True#False#True
+MCQ#Erling Haaland (Manchester City) internationally represents#Russia#Norway#Denmark#Norway
+TF#Julian Nagelsmann, who previously coached Bayern Munich, now manages the Finnish National Team#False
+MCQ#The only countries to have successively won Two UEFA EUROS between 2000 and 2020#France & Spain#England & Denmark#Wales & Switzerland#France & Spain
+TF#The Netherlands has the smallest human population in Europe#False
+MCQ#The only country with a World Cup on their name to have never won the UEFA Euros#Germany#England#Italy#England
+TF#Group B (Spain (8), Croatia (10), Italy (9), Albania (66)) is the UEFA Euros 2024 official Group Of Death#True
+MCQ#The UEFA EUROS is played, every...#2 years#4 years#5 years#4 years
+TF#The 2020 UEFA EUROS was hosted by 10 different European cities, instead of one country#True
+MCQ#Captain of the French National Football Team#Kevin De Bruyne#Alvaro Morata#Kylian Mbappe#Kylian Mbappe
+TF#Spain and France, are the only two countries to have won the EUROS#False
+MCQ#The number 13 jersey in Germany is famously worn by#Thomas Muller#Lukas Podolski#K-P Boateng#Thomas Muller
+TF#The English National Team, has the highest number of Black Footballers in the UEFA Euros 2024#False
+MCQ#The first player to score in two successive UEFA EURO finals#Fernando Torres#David Silva#Juan Mata#Fernando Torres
+TF#The Golden Goal Rule, a controversial tie-breaker, was retired after the 2004 UEFA EUROS#True

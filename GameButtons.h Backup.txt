@@ -1,0 +1,224 @@
+class GameButtons {
+
+	friend class Game;
+
+
+	Text question, option1, option2, option3, tTrue, tFalse;		//Question Text
+	Sprite button1, button2, button3;								//In our case the button is the option sprite(to be animated)
+	bool isMCQ = false;												//Will affect the type of graphics to draw.
+	string ans;														//The answer for this GameButtons instance.
+							
+public:
+	GameButtons() {}			//Empty constructor.
+
+
+	//Constructor for True or False.
+	GameButtons(string questionString, Color textColor, Font& font, int questionCharSize, int optionCharSize, string ans) {
+		this->ans = ans;
+		//Display true or false sprites
+		this->question.setString(questionString);
+		isMCQ = false;
+
+		question.setFont(font);
+		question.setCharacterSize(questionCharSize);
+		question.setFillColor(textColor);
+
+
+		//Ideally our options text have a smaller characterSize than our question. 
+		tTrue.setString("True");
+		tTrue.setFont(font);
+		tTrue.setCharacterSize(optionCharSize);
+		tTrue.setFillColor(textColor);
+
+		tFalse.setString("False");
+		tFalse.setFont(font);
+		tFalse.setCharacterSize(optionCharSize);
+		tFalse.setFillColor(textColor);
+
+	}
+
+	//Constructor for True or False. (Pre-set font and text color)
+	GameButtons(string questionString, string ans) {
+		this->ans = ans;
+		Font font;
+		font.loadFromFile("Pinky Love.ttf");
+		Color textColor = Color::White;
+		int questionCharSize = 20;
+		int optionCharSize = 20;
+
+		//Display true or false sprites
+		this->question.setString(questionString);
+		isMCQ = false;
+
+		question.setFont(font);
+		question.setCharacterSize(questionCharSize);
+		question.setFillColor(textColor);
+
+
+		//Ideally our options text have a smaller characterSize than our question. 
+		tTrue.setString("True");
+		tTrue.setFont(font);
+		tTrue.setCharacterSize(optionCharSize);
+		tTrue.setFillColor(textColor);
+
+		tFalse.setString("False");
+		tFalse.setFont(font);
+		tFalse.setCharacterSize(optionCharSize);
+		tFalse.setFillColor(textColor);
+
+	}
+
+	bool isMultipleChoice() {
+		return isMCQ;
+	}
+
+	//Constructor for MCQ
+	GameButtons(string questionString, string op1, string op2, string op3, Color optionTextColor, Color questionTextColor, Font& font, int questionCharSize, int optionCharSize, string &ans) {
+		this->ans = ans;
+		isMCQ = true;
+		//Question
+		question.setString(questionString);
+		question.setFont(font);
+		question.setCharacterSize(questionCharSize);
+		question.setFillColor(questionTextColor);
+
+
+		//Display the 3 multiple choices.
+		option1.setString(op1);
+		option2.setString(op2);
+		option3.setString(op3);
+
+		option1.setFont(font);
+		option2.setFont(font);
+		option3.setFont(font);
+
+
+		option1.setCharacterSize(optionCharSize);
+		option2.setCharacterSize(optionCharSize);
+		option3.setCharacterSize(optionCharSize);
+
+
+		option1.setFillColor(optionTextColor);
+		option2.setFillColor(optionTextColor);
+		option3.setFillColor(optionTextColor);
+	}
+
+	//Constructor for MCQ. Pre-Set Color, Font, and Character Size.
+	GameButtons(string questionString, string op1, string op2, string op3, string ans) {
+
+		//Initialize answer to the value in parameters
+		this->ans = ans;
+
+
+		Color optionTextColor = Color::White;
+		Color questionTextColor = Color :: Green;
+		Font font; font.loadFromFile("Pinky Love.ttf");
+
+		int questionCharSize = 20;
+		int optionCharSize = 20;
+
+		isMCQ = true;
+		//Question
+		question.setString(questionString);
+		question.setFont(font);
+		question.setCharacterSize(questionCharSize);
+		question.setFillColor(questionTextColor);
+
+
+		//Display the 3 multiple choices.
+		option1.setString(op1);
+		option2.setString(op2);
+		option3.setString(op3);
+
+		option1.setFont(font);
+		option2.setFont(font);
+		option3.setFont(font);
+
+
+		option1.setCharacterSize(optionCharSize);
+		option2.setCharacterSize(optionCharSize);
+		option3.setCharacterSize(optionCharSize);
+
+
+		option1.setFillColor(optionTextColor);
+		option2.setFillColor(optionTextColor);
+		option3.setFillColor(optionTextColor);
+	}
+
+
+
+	
+	//Show the question on the screen.
+	void showQuestion(RenderWindow &window) {
+		
+		setPosition(window);
+		if (isMCQ) {
+			window.draw(question);
+			window.draw(option1);
+			window.draw(option2);
+			window.draw(option3);
+		}
+		else {
+			window.draw(question);
+			window.draw(tTrue);
+			window.draw(tFalse);
+		}
+	}
+
+	//Return the list of objects to print out
+	std::vector<Text> getElements() {
+		if (isMCQ) {
+			return {question, option1, option2, option3};
+		}
+		else {
+			return {question, tTrue, tFalse};
+		}
+	}
+		
+
+	inline string getAnswer() { return ans; }			//In-line function that returns the correct answer.
+
+
+	//Set the font for a given text object
+	void setFont(Font& font, Text& text) {
+		//Font created outside the class
+		text.setFont(font);
+	}
+
+	//Change the text color for every text element on screen.
+	void changeTextCol(Color col) {
+		question.setFillColor(col);
+		option1.setFillColor(col); 
+		option2.setFillColor(col); 
+		option3.setFillColor(col); 
+		tTrue.setFillColor(col);
+		tFalse.setFillColor(col);
+	}
+
+	void setFont(Font font) {
+		question.setFont(font);
+		option1.setFont(font);
+		option2.setFont(font);
+		option3.setFont(font);
+	}
+
+
+	//Soh
+	//Set's the position of every element in screen. This is a fixed position. 
+	void setPosition(Window& window) {
+		//Set position of question and options depending on isMCQ
+		Vector2u windowSize = window.getSize();
+
+		question.setPosition((windowSize.x / 2.0f) - 200, (windowSize.y / 2.0f) - 100);
+		if (isMCQ) {
+			option1.setPosition(40, windowSize.y - 100);
+			option2.setPosition((windowSize.x / 2.0f) - 40, windowSize.y - 100);
+			option3.setPosition(windowSize.x - 110, windowSize.y - 100);
+		}
+		else {
+			tTrue.setPosition(40, windowSize.y - 100);
+			tFalse.setPosition(windowSize.x - 110, windowSize.y - 100);
+		}
+
+	}
+};
