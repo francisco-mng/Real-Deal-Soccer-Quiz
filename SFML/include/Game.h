@@ -998,7 +998,7 @@ public:
         }
         else {
            
-            window = new RenderWindow(VideoMode(VideoMode::getDesktopMode().width / 1.3, VideoMode::getDesktopMode().height / 1.3), "Game", Style::Fullscreen);
+            window = new RenderWindow(VideoMode(1336 / 1.3, 768/ 1.3), "Game", Style::Fullscreen);
             font->loadFromFile("Roboto-BoldItalic.ttf");
             addMusic("uefa.ogg", "Fifa7.jpg");//Playing the loading image
         }
