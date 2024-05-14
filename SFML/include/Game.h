@@ -939,7 +939,6 @@ public:
         Sprite bgSprite(bg);
         Vector2u windowSize = window->getSize();
         bgSprite.setScale(float(windowSize.x) / bg.getSize().x, float(windowSize.y) / bg.getSize().y);
-
         Button proceed(Color::Blue, 40, Color::White, "Proceed", Vector2f(350, 100), font);
         proceed.setPosition({300,600 });
 
@@ -994,7 +993,7 @@ public:
         font = new Font();
 
         if (attemptedLevel1 || attemptedLevel2 || attemptedLevel3) {
-
+            //Do nothing
         }
         else {
            
