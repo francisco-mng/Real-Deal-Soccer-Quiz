@@ -855,6 +855,7 @@ public:
 
 
         while (window->isOpen()) {
+            // Check if the any level is selected and not show instructions again
             if (!isLevelSelected) {
                 instructions(afont);
                 isLevelSelected = true;
@@ -939,7 +940,6 @@ public:
         Sprite bgSprite(bg);
         Vector2u windowSize = window->getSize();
         bgSprite.setScale(float(windowSize.x) / bg.getSize().x, float(windowSize.y) / bg.getSize().y);
-
         Button proceed(Color::Blue, 40, Color::White, "Proceed", Vector2f(350, 100), font);
         proceed.setPosition({300,600 });
 
@@ -994,11 +994,11 @@ public:
         font = new Font();
 
         if (attemptedLevel1 || attemptedLevel2 || attemptedLevel3) {
-
+            //Do nothing
         }
         else {
            
-            window = new RenderWindow(VideoMode(1336, 768), "Game", Style::Fullscreen);
+            window = new RenderWindow(VideoMode(1336, 768), "Game", Style::Close);
             font->loadFromFile("Roboto-BoldItalic.ttf");
             addMusic("uefa.ogg", "Fifa7.jpg");//Playing the loading image
         }
